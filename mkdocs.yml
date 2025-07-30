@@ -1,1 +1,69 @@
-site_name: My Docs
+site_name: Joe’s Blog
+site_url: https://jihobak.github.io/blog/  # GitHub Pages URL
+# repo_url: https://github.com/jihobak/blog
+copyright: Copyright &copy; 2025 Jiho Bak, 뉴컴퓨터
+theme:
+  name: material
+  logo: assets/logo.svg
+  palette:
+    - scheme: default
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+nav:
+  - Home: index.md
+  # - About: about.md
+  - Writing:
+    - "writing/index.md"
+
+plugins:
+  - minify:
+      minify_html: true
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - blog:
+      enabled: !ENV CI
+      blog_dir: writing
+      blog_toc: true
+      post_dir: writing/posts
+      post_date_format: yyyy/MM/dd
+      post_url_format: "{date}/{slug}"
+      authors_file: "{blog}/.authors.yml"
+
+markdown_extensions:
+  - admonition   # !!! 구문 지원
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+  - stylesheets/extra.css
