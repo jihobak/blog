@@ -1,0 +1,62 @@
+[data-md-color-scheme="default"] {
+  /* Primary #7FEE64; #DDFFDC */
+  --md-primary-bg-color: #FFFFFF;
+  --md-primary-bg-color--light: #7FEE64;
+  --md-primary-bg-color--dark: #7FEE64;
+  --md-primary-fg-color: #000000;
+  --md-primary-fg-color--light: #000000;
+  --md-primary-fg-color--dark:  #000000;
+  /* Accent */
+  --md-accent-bg-color:   #FFFFFF;
+  --md-accent-fg-color:   #7FEE64;
+
+  /* 링크 기본색 */
+  --md-typeset-a-color:          #1976D2;  /* 7FEE64 평소 링크 */
+  --md-typeset-a-color--light:   #1976D2;  /* ED94A7 라이트 모드에도 동일하게 */
+  --md-typeset-a-color--dark:    #1976D2;  /* 다크 모드에도 동일하게 */
+
+  /* 마우스 오버할 때 색상 */
+  --md-typeset-a-hover-color:    #7FEE64;
+  /* 방문한 사이트 */
+  --md-typeset-a-visited-color: #757575;
+}
+
+/* 제목(h1~h6) 안의 링크에는 색상 적용하지 않음 */
+[data-md-color-scheme="default"] .md-typeset h1 a,
+[data-md-color-scheme="default"] .md-typeset h2 a,
+[data-md-color-scheme="default"] .md-typeset h3 a,
+[data-md-color-scheme="default"] .md-typeset h4 a,
+[data-md-color-scheme="default"] .md-typeset h5 a,
+[data-md-color-scheme="default"] .md-typeset h6 a {
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
+
+/* 본문 내 일반 링크에만 색상 적용 */
+[data-md-color-scheme="default"] .md-typeset p a,
+[data-md-color-scheme="default"] .md-typeset li a,
+[data-md-color-scheme="default"] .md-typeset td a {
+  color: var(--md-typeset-a-color) !important;
+}
+
+[data-md-color-scheme="default"] .md-typeset p a:hover,
+[data-md-color-scheme="default"] .md-typeset li a:hover,
+[data-md-color-scheme="default"] .md-typeset td a:hover {
+  color: var(--md-typeset-a-hover-color) !important;
+}
+
+[data-md-color-scheme="default"] .md-tabs__item.md-tabs__item--active p a,
+[data-md-color-scheme="default"] .md-tabs__item.md-tabs__item--active li a,
+[data-md-color-scheme="default"] .md-tabs__item.md-tabs__item--active td a {
+  color: var(--md-typeset-a-hover-color) !important;
+}
+
+[data-md-color-scheme="default"] .md-tabs__item.md-tabs__item--active > .md-tabs__link {
+  color: var(--md-typeset-a-hover-color) !important;
+}
+
+/* [data-md-color-scheme="default"] .md-typeset p a:visited,
+[data-md-color-scheme="default"] .md-typeset li a:visited,
+[data-md-color-scheme="default"] .md-typeset td a:visited {
+  color: var(--md-typeset-a-visited-color) !important;
+} */
