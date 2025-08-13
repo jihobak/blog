@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jihobak.github.io/blog/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <lastmod>2025-08-13</lastmod>
     </url>
     <url>
          <loc>https://jihobak.github.io/blog/about/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+         <loc>https://jihobak.github.io/blog/reference/gpt-5_new_params_and_tools/</loc>
+         <lastmod>2025-08-13</lastmod>
     </url>
     <url>
          <loc>https://jihobak.github.io/blog/writing/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <lastmod>2025-08-13</lastmod>
     </url>
     <url>
-         <loc>https://jihobak.github.io/blog/writing/2025/07/29/mcp-server-building/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <loc>https://jihobak.github.io/blog/writing/2025/08/12/gpt5-new-features-guide/</loc>
+         <lastmod>2025-08-13</lastmod>
     </url>
     <url>
          <loc>https://jihobak.github.io/blog/writing/archive/2025/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <lastmod>2025-08-13</lastmod>
     </url>
     <url>
-         <loc>https://jihobak.github.io/blog/writing/category/mcp/</loc>
-         <lastmod>2025-07-30</lastmod>
+         <loc>https://jihobak.github.io/blog/writing/category/applied-ai/</loc>
+         <lastmod>2025-08-13</lastmod>
     </url>
 </urlset>
